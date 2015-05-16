@@ -1,0 +1,388 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+网站各个模块精华缩影区域
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.highlights {
+    border : 1px solid @assisted-gray-1 ;
+    /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    右边的统计部分
+    -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    .statistics {        
+        display : none ;
+        float : right ;
+        width : 270px ;
+        * {
+            text-align : center ;
+        }
+        .dealer-count {
+            color : @basic-orange ;            
+            .font (normal, normal, 500, 40px, 40px, @basic-font-family) ;
+            margin : 50px 0 10px 0 ;
+            .char {
+                .border-radius(5px) ;
+                border : 1px solid @assisted-gray-2 ;
+                //box-shadow: h-shadow v-shadow blur spread color inset;
+                box-shadow : 2px 2px 2px @assisted-gray-4 ;
+                .inline-block() ;
+                margin : 0 3px ;
+                padding : 8px 4px ;
+            }
+        }
+        h4 {            
+            .font (normal, normal, normal, 20px, 30px, @basic-font-family) ;
+        }
+        p {
+            color : @secondary-text-color ;            
+            .font (normal, normal, normal, 14px, 30px, @basic-font-family) ;
+        }
+        .btn-group {
+            margin-top : 50px ;
+            .sell {
+                padding : 0 35px ;
+                span {
+                    .inline-block() ;
+                }
+            }
+        }
+    }
+    /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    左边的各个模块精华TabMenu部分
+    -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    .module-synopsis {        
+        margin-right : 275px ;
+        border-right : 1px solid @assisted-gray-1 ;
+        /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        品牌、车系、车型等选择空间样式
+        -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+        .model {
+            background : @assisted-gray-3 ;
+            border : 0 ;
+            .border-radius(5px) ;
+            .inline-block() ;
+            margin-right : 40px ;
+            padding : 5px ;
+            .automodel {                
+                background : @basic-light-color ;
+                .border-radius(3px) ;
+                border : 1px solid @assisted-gray-1 ;
+                height : 40px ;
+                .automodel-input-div {
+                    .font (normal, normal, normal, 14px, 36px, @basic-font-family) ;
+                    height : 36px ;
+                }
+            }
+            
+        }
+        /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        TabMenu的句柄部分
+        -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+        .tabs-handle {
+            float : left ;
+            width : 140px ;
+            li {
+                background : @assisted-gray-5 ;
+                border-bottom : 1px solid @assisted-gray-1 ;
+                border-right : 1px solid @assisted-gray-1 ;
+                cursor : pointer ;
+                .font (normal, normal, normal, 18px, 80px, @basic-font-family) ;
+                height : 80px ;
+                text-align : center ;                
+            }
+            .last {
+                border-bottom : none ;
+            }
+            .on {
+                background : @basic-light-color ;
+                border-right : none ;
+            }
+        }
+        /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        Tab内容部分
+        -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+        .tabs-content {           
+            margin-left : 140px ;
+            /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            每个tab页面容器
+            -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+            .tabs-frame {
+                display : none ;
+                padding : 20px 30px ;
+            }
+            /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            tab标题
+            -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+            h2 {
+                color : @basic-orange ;                
+                .font (normal, normal, normal, 26px, 80px, @basic-font-family) ;
+            }
+            .more {
+                line-height : 80px ;
+            }
+            /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            买车部分
+            -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+            .buy {                
+                display : block ;
+                .search-bar {
+                    margin-bottom : 10px ;
+                }
+                .filter-item {
+                    border-bottom : 1px solid @assisted-gray-1 ;                      
+                    padding : 12px 0 ;
+                    dt {                   
+                        .font (normal, normal, bolder, 14px, @basic-line-height, @basic-font-family) ;
+                        .inline-block() ;
+                        text-align : left ;
+                        width : 60px ;
+                    }
+                    dd {
+                        .inline-block() ;               
+                    }
+                }
+                .last {
+                    border : 0 ;
+                }                
+                .brand {
+                    .representative {
+                        a {
+                            background-image : url(images/brand.png) ;
+                            background-repeat : no-repeat ;
+                            border : 1px solid @assisted-gray-1 ;
+                            .border-radius(5px) ;
+                            .font (normal, normal, normal, 14px, @basic-line-height, @basic-font-family) ;
+                            .inline-block() ;
+                            height : 45px ;
+                            margin : 0 5px ;                            
+                            width : 45px ;                            
+                        }
+                        .vw {
+                            background-position : 0 0 ;
+                        }
+                        .bmw {
+                            background-position : 0 -45px ;
+                        }
+                        .audi {
+                            background-position : 0 -90px ;
+                        }
+                        .toyota {
+                            background-position : 0 -135px ;
+                        }
+                        .honda {
+                            background-position : 0 -180px ;
+                        }
+                        .benz {
+                            background-position : 0 -225px ;
+                        }
+                        .buick {
+                            background-position : 0 -270px ;
+                        }
+                        .ford {
+                            background-position : 0 -315px ;
+                        }
+                        .hyundai {
+                            background-position : 0 -360px ;
+                        }
+                        .chevrolet {
+                            background-position : 0 -405px ;
+                        }
+                    }
+                    .extension {
+                        cursor : pointer ;
+                        position : relative ;
+                        .more {
+                            .font (normal, normal, normal, 14px, 45px, @font-simsun) ;
+                        }
+                        .brand-panel {
+                            left : -245px ;
+                            position : absolute ;
+                            top : 22px ;
+                            visibility : hidden ;
+                            width : 500px ;                            
+                        }
+                    }                    
+                }
+                .price, .age, .level {
+                    a {
+                        .font (normal, normal, normal, 14px, @basic-line-height, @basic-font-family) ;
+                        margin : 0 8px ;
+                    }
+                }
+            }
+            /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            卖车部分
+            -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+            .sell {
+                .assistant {
+                    float : right ;
+                    width : 240px ;
+                    dl {
+                        margin-bottom : 30px ;
+                        dt {
+                            color : @primary-text-color ;                            
+                            .font (normal, normal, normal, 18px, 35px, @basic-font-family) ;
+                            span {
+                                .inline-block() ;
+                            }
+                            .sn {
+                                background : @basic-blue ;
+                                .border-radius(5px) ;
+                                color : @basic-light-color ;                                
+                                .font (normal, normal, normal, 10px, 15px, @basic-font-family) ;
+                                margin-right : 10px ;
+                                padding : 2px 7px ;
+                            }
+                        }
+                        dd {
+                            color : @secondary-text-color ;                            
+                            .font (normal, normal, normal, 14px, @basic-line-height, @basic-font-family) ;
+                            text-indent : 28px ;
+                        }
+                    }
+                }
+                .main {
+                    margin-right : 240px ;
+                    .model {
+                        margin-bottom : 30px ;
+                    }
+                    .register {
+                        .font (normal, normal, normal, 14px, @basic-line-height, @basic-font-family) ;
+                        margin-left : 10px ;
+                        vertical-align : bottom ;
+                    }
+                }
+            }
+            /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            购车惠部分
+            -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+            .groupbuy {                
+                dl {
+                    dt {
+                        float : left ;
+                        img {
+                            height : 180px ;
+                            width : 270px ;
+                        }
+                    }
+                    dd {
+                        margin-left : 280px ;
+                        h3 {
+                            border-bottom : 1px dotted @assisted-gray-1 ;
+                            color : @primary-text-color ;                            
+                            .font (normal, normal, normal, 22px, 50px, @basic-font-family) ;
+                        }
+                    }
+                    .summary {
+                        color : @secondary-text-color ;                        
+                        .font (normal, normal, normal, 14px, 40px, @basic-font-family) ;
+                    }                    
+                    .times {
+                        .font (normal, normal, normal, 14px, @basic-line-height, @basic-font-family) ;
+                        span {
+                            color : @basic-orange ;
+                        }
+                    }
+                    .intro {
+                        color : @basic-orange ;                        
+                        .font (normal, normal, bolder, 24px, 50px, @basic-font-family) ;
+                    }
+                }
+            }
+            /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            经销商部分
+            -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+            .dealers {
+                .title {
+                    margin-bottom : 20px ;
+                    h2 {
+                        .inline-block() ;
+                        margin-right : 20px ;
+                    }
+                    ul {
+                        .inline-block() ;
+                        li {
+                            cursor : pointer ;
+                            float : left ;
+                            .font (normal, normal, normal, 14px, @basic-line-height, @basic-font-family) ;
+                            height : @basic-line-height ;
+                            padding : 0 10px ;
+                            &.on {
+                                background : @basic-orange ;
+                                color : @basic-light-color ;
+                            }
+                        }
+                    }
+                }
+                .panel {                    
+                    position : relative ;
+                    .controller {
+                        left : 0 ;
+                        position : absolute ;
+                        top : 50px ;
+                        width : 100% ;
+                        z-index : 1000 ;
+                        a {
+                            background : transparent url(images/icon-32.png) no-repeat ;                            
+                            display : block ;
+                            height : 32px ;
+                            position : absolute ;
+                            top : 0 ;
+                            transition : .5s ;
+                            width : 32px ;
+                        }
+                        .prev {
+                            background-position : 0 -32px ;
+                            left : 0 ;
+                            &:hover {
+                                background-position : 0 -96px ;
+                            }
+                        }
+                        .next {
+                            background-position : 0 0 ;
+                            right : 0 ;
+                            &:hover {
+                                background-position : 0 -64px ;
+                            }
+                        }
+                    }
+                    .tempWrap {
+                        margin : 0 45px ;
+                    }
+                    .content {          
+                        
+                        a {                            
+                            color : @secondary-text-color ;
+                            display : block ;
+                            float : left ;
+                            padding : 5px 0 ;
+                            width : 102px ;
+                            &:hover {
+                                background : @assisted-gray-4 ; 
+                            }
+                            dl {                                
+                                margin : 0 5px ;                                
+                                dt {
+                                    text-align : center ;
+                                    img {
+                                        border : 1px solid @assisted-gray-1 ;                                        
+                                        height : 39px ;
+                                        width : 52px ;
+                                    }
+                                }
+                                dd {
+                                    margin : 5px 0 ;
+                                    text-align : center ;
+                                }
+                                .store-name {
+                                    text-align : center ;
+                                    .text-ellipsis() ;
+                                    width : 95px ;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+              
+    }
+}

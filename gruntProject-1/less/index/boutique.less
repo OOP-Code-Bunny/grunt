@@ -1,0 +1,68 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+精品二手车区域
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.boutique {
+    .item {        
+        background-image : url(images/home-boutique.jpg) ;
+        background-repeat : no-repeat ;        
+        display : block ;
+        transition : 0.5s ;
+    }
+    .framework {
+        background-color : #666 ;
+        dl {
+            padding : 20px ;
+            dt {
+                color : @primary-text-color ;                   
+                .font (normal, normal, normal, 18px, @basic-line-height, @basic-font-family) ;
+                text-align : right ;
+            }
+            dd {
+                color : @secondary-text-color ;                    
+                .font (normal, normal, normal, 12px, @basic-line-height, @basic-font-family) ;
+                text-align : right ;
+            }
+        }        
+        .narrow {            
+            border-right : 1px solid @basic-light-color ;             
+            float : left ;
+            height : 323px ;
+            width : 230px ;
+        }
+        .wide {
+            border-right : 1px solid @basic-light-color ;             
+            float : left ;
+            width : 487px ;
+            a {
+                height : 161px ;
+            }
+            .cheap {
+                background-position : 0 -969px ;
+                border-bottom : 1px solid @basic-light-color ;
+                dt {
+                    color : @basic-orange ;
+                    text-align : left ;
+                }
+                dd {
+                    text-align : left ;
+                }
+            }
+            .provide {
+                background-position : 0 -1130px ;
+            }
+        }
+        .suv {
+            background-position : 0 0 ;
+            dt {
+                color : @basic-red ;                
+            }            
+        }
+        .newer {
+            background-position : 0 -323px ;            
+        }
+        .last {
+            background-position : 0 -646px ;
+            border : 0 ;
+        }
+    }
+}

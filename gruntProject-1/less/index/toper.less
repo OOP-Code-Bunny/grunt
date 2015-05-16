@@ -1,0 +1,96 @@
+.toper {
+    background : @assisted-gray-5 ;
+    border-bottom : 1px solid @assisted-gray-1 ;
+    box-sizing : content-box ;
+    .container {
+        padding-top : 2px ;
+        position : relative ;
+        .static-text {            
+            font-size : 0 ;
+            span {
+                color : @secondary-text-color ;
+                .font (normal, normal, normal, 12px, 30px, @basic-font-family) ;
+                .inline-block() ;
+                margin : 0 5px ;                
+            }
+            .online-status-off {
+                display : none ;
+                float : left ;
+            }
+            .online-status-on {
+                display : none ;
+                float : left ;
+                .my-51auto {
+                    background : @basic-light-color ;
+                    border : 1px solid @assisted-gray-1 ;
+                    .border-radius(3px) ;
+                    .font (normal, normal, normal, 12px, 26px, @basic-font-family) ;
+                    height : 26px ;
+                    margin : 0 5px ;
+                    padding : 0 5px ;
+                }
+            }
+            a {            
+                .font (normal, normal, normal, 12px, 30px, @basic-font-family) ;
+                height : 30px ;
+                .inline-block() ;                
+                &:link {
+                    color : @primary-text-color ;
+                }
+                &:visited {
+                    color : @primary-text-color ;
+                }
+                &:hover {
+                    color : @basic-blue ;
+                }
+                &:active {
+                    color : @basic-blue ;
+                }
+            }
+            .focus {
+                cursor : pointer ;
+                .inline-block() ;
+                width : 100px ;
+                position : relative ;
+                .handle {
+                    border : 1px solid transparent ; 
+                    border-bottom : none ;
+                    .border-top-radius(3px) ;
+                    display : block ;
+                    .font (normal, normal, normal, 12px, 26px, @basic-font-family) ;
+                    height : 29px ;
+                    position : relative ;
+                    text-align : center ;
+                    top : 1px ;
+                    z-index : 1000 ;
+                    &.on {
+                        background : @basic-light-color ;
+                        border-color : @assisted-gray-1 ; 
+                    }
+                }
+                .content {
+                    background : @basic-light-color ;
+                    border : 1px solid @assisted-gray-1 ;      
+                    position : absolute ;
+                    visibility : hidden ;
+                    width : 130px ;
+                    z-index : 999 ;
+                    .weibo {
+                        border-bottom : 1px solid @assisted-gray-1 ;
+                        display : block ;
+                        .font (normal, normal, bolder, 12px, 40px, @basic-font-family) ;
+                        height : 40px ;
+                        text-align : center ;
+                    }
+                    ul {
+                        li {
+                            margin : 5px ;
+                            text-align : center ;
+                        }
+                    }
+                }
+            }
+        }
+
+    }    
+}

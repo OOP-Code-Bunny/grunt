@@ -1,0 +1,16 @@
+.clearfix() {
+  &:after {
+    clear : both ;
+    content : " " ;
+    display : block ;
+    font-size : 0 ;
+    height : 0 ;    
+    visibility : hidden ;
+  }  
+  *zoom: 1;  // fix for IE6/7
+}
+
+.fit-height() {
+    overflow : auto ;
+    zoom : 1 ;
+}

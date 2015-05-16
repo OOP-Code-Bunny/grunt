@@ -1,0 +1,35 @@
+/*车源列表头部*/
+.car-part {
+    border-top: 1px solid @basic-blue;
+    margin-bottom: 30px;
+    
+    .car-harder {
+        height: 70px;
+        line-height: 70px;
+        overflow: hidden;
+        h2 {
+            float: left;
+        }
+        .car-harder-right {
+            float: right;
+            font-size: 14px;
+            text-align: right;
+
+            a.more {
+                color: @basic-blue;
+
+                &:hover {
+                    color: @basic-orange
+                }
+            }
+            a.car-brand {
+                color: @assistant-text-color;
+                margin-right: 10px;
+
+                &:hover {
+                    color: @basic-blue;
+                }
+            }
+        }
+    }
+}

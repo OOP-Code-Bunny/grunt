@@ -1,0 +1,144 @@
+/*右侧栏*/
+
+/*高价卖车*/
+.heightcost-content {
+	.heightcost {
+		color: @tips-text-color;
+		font-size: 32px;
+	}
+	.heightcost-small {
+		color: @assistant-text-color;
+		font-size: 15px;
+		padding: 10px 0;
+	}
+	.heightcost-btn {
+		height: 46px;
+		line-height: 46px;
+		text-align: center;
+		width: 220px;
+	}
+}
+#automodel {
+	background: #fff;
+	border: 1px solid #ddd;
+	width: 238px;
+	height: 35px;
+	margin-bottom: 10px;
+	.automodel-sel .automodel-input-div {
+		font-size: 16px;
+		height: 33px;
+		line-height: 33px;
+	}
+}
+.heightcost-name,
+.heightcost-tel {
+	background: #fff;
+	border: 1px solid #ddd;
+	width: 238px;
+	height: 35px;
+	margin-bottom: 10px;
+	input {
+		border: 0;
+		color: @assistant-text-color;
+		width: 218px;
+		font: 400 16px/20px Helvetica, Verdana, Arial, "Microsoft YaHei", '\5FAE\8F6F\96C5\9ED1', SimSun, '\5b8b\4f53', sans-serif;
+		height: 33px;
+		line-height: 33px;
+		overflow: hidden;
+		padding: 0 10px;
+	}
+}
+
+/*placeholder占位符*/
+::-webkit-input-placeholder {
+	// WebKit内核浏览器
+	color: #999;
+}
+:-moz-placeholder {
+	// Mozilla Firefox 4 - 18
+	color: #999;
+}
+::-moz-placeholder {
+	// Mozilla Firefox 19+
+	color: #999;
+}
+:-ms-input-placeholder {
+	// IE 10+
+	color: #999;
+}
+.placeholder {
+	// IE 9-
+	color: #999;
+}
+
+/*上海促销信息*/
+.rightside-border {
+	border: 1px solid @assisted-gray-1;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0 0 20px 0;
+	h2 {
+		border-bottom: 1px solid @assisted-gray-1;
+		color: @primary-text-color;
+		font-size: 18px;
+		height: 50px;
+		line-height: 50px;
+		margin-bottom: 10px;
+		padding-left: 10px;
+	}
+	.promotion {
+		li {
+			background: url('http://cdn05.51autoimg.com/apps/2015.51auto.com/css/images/buy-rightside-icon.jpg') no-repeat 10px 8px;
+			line-height: 160%;
+			padding-left: 23px;
+		}
+	}
+}
+
+/*推荐经销商*/
+.ngmarquee {
+	overflow: hidden;
+	height: 610px;
+	width: 298px;
+	ul li {
+		height: 68px;
+		overflow: hidden;
+		padding: 0 20px 10px 10px;
+		img {
+			border: 1px solid @assisted-gray-2;
+			float: left;
+			margin-right: 20px;
+		}
+		.ngmarquee-title {
+			color: @secondary-text-color;
+			float: left;
+			font-size: 15px;
+		}
+	}
+}
+
+/*右侧栏按钮图*/
+.rightside-pic {
+	margin-bottom: 10px;
+}
+
+/*推荐评估师*/
+.appraiser {
+	padding: 10px 20px 0 10px;
+	img {
+		border: 1px solid @assisted-gray-2;
+		float: left;
+		margin-right: 10px;
+	}
+	.appraiser-info {
+		color: @assistant-text-color;
+		float: left;
+		font-size: 14px;
+		line-height: 160%;
+		.name {
+			color: @primary-text-color;
+			font-size: 15px;
+			font-weight: 600;
+		}
+	}
+}

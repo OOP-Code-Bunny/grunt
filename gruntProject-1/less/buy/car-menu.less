@@ -1,0 +1,85 @@
+/*-头部汽车品牌、车型、价格、车龄、级别*/
+.buy {                
+    .search-bar {
+        margin-bottom : 10px ;
+    }
+    .filter-item {
+        border-bottom : 1px solid @assisted-gray-1 ;                      
+        padding : 17px 0 ;
+        dt {                   
+            .font (normal, normal, bold, 14px, @basic-line-height, @basic-font-family) ;
+            .inline-block() ;
+            text-align : center ;
+            width : 60px ;
+        }
+        dd {
+            .inline-block() ;               
+        }
+    }
+    .last {
+        border : 0 ;
+    }                
+    .brand {
+        .representative {
+            a {
+                background-image : url(images/brand.png) ;
+                background-repeat : no-repeat ;
+                border : 1px solid @assisted-gray-1 ;
+                .border-radius(5px) ;
+                .font (normal, normal, normal, 14px, @basic-line-height, @basic-font-family) ;
+                .inline-block() ;
+                height : 45px ;
+                margin : 0 5px ;                            
+                width : 45px ;                            
+            }
+            .vw {
+                background-position : 0 0 ;
+            }
+            .bmw {
+                background-position : 0 -45px ;
+            }
+            .audi {
+                background-position : 0 -90px ;
+            }
+            .toyota {
+                background-position : 0 -135px ;
+            }
+            .honda {
+                background-position : 0 -180px ;
+            }
+            .benz {
+                background-position : 0 -225px ;
+            }
+            .buick {
+                background-position : 0 -270px ;
+            }
+            .ford {
+                background-position : 0 -315px ;
+            }
+            .hyundai {
+                background-position : 0 -360px ;
+            }                       
+        }
+        .extension {
+            cursor : pointer ;
+            position : relative ;
+            .more {
+                .font (normal, normal, normal, 14px, 45px, @font-simsun) ;
+            }
+            .brand-panel {
+                display: none;
+                left : -245px ;
+                position : absolute ;
+                top : 22px ;
+                //visibility : hidden ;
+                width : 500px ;                            
+            }
+        }                    
+    }
+    .price, .age, .level {
+        a {
+            .font (normal, normal, normal, 14px, @basic-line-height, @basic-font-family) ;
+            margin : 0 8px ;
+        }
+    }
+}

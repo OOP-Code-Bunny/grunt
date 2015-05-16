@@ -1,0 +1,77 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+个性化区域，包括推荐二手车 | 猜你喜欢 | 热门车型等
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.personalized {
+    .hot-model {        
+        float : right ;
+        width : 220px ;
+        h3 {
+            background : @basic-blue ;
+            color : @basic-light-color ;            
+            .font (normal, normal, normal, 20px, 55px, @basic-font-family) ;
+            height : 55px ;
+            text-indent : 15px ;
+        }
+        .arrange {
+            border : 1px solid @assisted-gray-1 ;
+            border-top : none ;
+            padding : 10px ;
+            dl {
+                border-bottom : 1px dotted @assisted-gray-1 ;
+                padding : 3px 0 ;
+                dt {
+                    a {
+                        color : @primary-text-color ;                    
+                        .font (normal, normal, normal, 14px, @basic-line-height, @basic-font-family) ;
+                    }                    
+                    .sn {
+                        border : 1px solid @assistant-text-color ;
+                        .border-radius(100px) ;
+                        color : @assistant-text-color ;                        
+                        .font (normal, normal, normal, 10px, 15px, @basic-font-family) ;
+                        height : 15px ;
+                        .inline-block() ;
+                        margin-right :5px ;
+                        text-align : center ;
+                        width : 15px ;
+                    }
+                    .front {
+                        border-color : @basic-red ;
+                        color : @basic-red ;
+                    }
+                }
+                dd {
+                    div {
+                        color : @secondary-text-color ;                        
+                        .font (normal, normal, normal, 12px, @basic-line-height, @basic-font-family) ;
+                    }
+                    .count {
+                        color : @basic-red ;
+                        .inline-block() ;
+                        margin-right : 3px ;
+                    }
+                    .price {
+                        text-indent : 20px ;
+                    }
+                }
+            }
+            .last {
+                border : none ;
+            }
+        }
+    }
+    .wide {
+        border-top : 1px solid @basic-blue ;
+        margin-right : 220px ;        
+        .recommend {
+            margin-bottom : 20px ;
+        }
+        .guess {
+            border-top : 1px solid @basic-blue ;            
+        }
+        .more {
+            margin-right : 20px ;
+            _margin-right : 10px ;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+/*浮动层*/
+.floatlay {
+	background: #fff;
+	top: 220px;
+	left: 50%;
+	margin-left: -700px;
+	position: fixed;
+	_position: absolute;
+	width: 100px;
+	text-align: center;
+	.floatlay-title {
+		border: 1px solid @assisted-gray-1;
+		color: @primary-text-color;
+		height: 35px;
+		line-height: 35px;
+	}
+	ul {
+		border-left: 1px solid @assisted-gray-1;
+		border-right: 1px solid @assisted-gray-1;
+		border-bottom: 1px solid @assisted-gray-1;
+		margin-bottom: 10px;
+		padding: 10px 0;
+		li {
+			color: @assistant-text-color;
+			cursor: pointer;
+			height: 25px;
+			line-height: 25px;
+			overflow: hidden;
+		}
+	}
+	a {
+		color: @assistant-text-color;
+		&:hover {
+			color: @basic-blue;
+		}
+	}
+}

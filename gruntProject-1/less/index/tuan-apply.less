@@ -1,0 +1,81 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+购车惠及报名区域
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.tuan-apply {
+    border-top : 1px solid @basic-blue ;
+    .apply {
+        float : right ;
+        width : 220px ;
+        h3 {
+            background : @basic-blue ;
+            color : @basic-light-color ;            
+            .font (normal, normal, normal, 20px, 55px, @basic-font-family) ;
+            height : 55px ;
+            text-indent : 15px ;
+        }
+        .ngmarquee {
+            border : 1px solid @assisted-gray-1 ;
+            border-top : none ; 
+            height : 250px ;
+            overflow : hidden ;                     
+        }
+        ul {                       
+            li {                
+                .font (normal, normal, normal, 12px, 30px, @basic-font-family) ;
+                padding : 0 5px ;
+                .text-ellipsis() ;
+                width : 210px ;
+            }
+        }
+    }
+    .tuan {
+        margin-right : 240px ;
+        h2 {
+            small {
+                color : @basic-blue ;
+                .font (normal, normal, normal, 16px, @h2-line-height, @basic-font-family) ;
+                margin-left : 20px ;
+            }
+        }
+        dl {
+            dt {
+                float : left ;
+                img {
+                    height :240px ;
+                    width : 360px ;
+                }
+            }
+            dd {
+                margin-left : 370px ;                
+            }
+            .title {
+                border-bottom : 1px dotted @assisted-gray-1 ;
+                h3 a {                    
+                    color : @primary-text-color ;
+                    .font (normal, normal, bolder, 20px, 40px, @basic-font-family) ;
+                }
+                .count {
+                    color : @primary-text-color ;                    
+                    .font (normal, normal, normal, 14px, 40px, @basic-font-family) ;
+                    .amount {
+                        color : @basic-red ;
+                    }
+                }
+            }
+            .summary {
+                color : @primary-text-color ;                
+                .font (normal, normal, normal, 16px, 50px, @basic-font-family) ;
+            }
+            .countdown {
+                color : @secondary-text-color ;                
+                .font (normal, normal, normal, 14px, 20px, @basic-font-family) ;
+            }
+            .stress {
+                color : @basic-red ;
+                .font (normal, normal, bolder, 24px, 40px, @basic-font-family) ;
+                margin-top : 20px ;
+                margin-bottom : 20px ;
+            }
+        }
+    }
+}
